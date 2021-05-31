@@ -1,0 +1,417 @@
+body {
+   font-family: Arial, sans-serif;
+}
+.header {
+   height: 60px;
+   width: 100%;
+   background-color: #344051;
+}
+.header__nav-logo {
+   font-size: 24px;
+   line-height: 60px;
+   color: #fff;
+   padding-left: 388px;
+   float: left;
+}
+.header__nav-menu {
+   float: left;
+   padding-left: 432px;
+}
+.header__nav-menu li {
+   float: left;
+   color: #fff;
+   margin-right: 40px;
+   font-size: 16px;
+   line-height: 60px;
+   text-transform: uppercase;
+}
+
+.main {
+   width: 100%;
+   height: 1017px;
+   background: url(../img/ten.png) bottom/100% no-repeat, url(../img/Man.png) 90% 100% / auto 85% no-repeat,
+      url(../img/fon.jpg) center/cover no-repeat;
+}
+.main__title {
+   float: left;
+   margin: 430px 0 0 404px;
+   color: #2c384a;
+   text-align: center;
+}
+.main__title h1 {
+   font-size: 80px;
+   font-weight: bold;
+}
+.main__title h4 {
+   font-size: 20px;
+   color: #79818d;
+   padding-top: 40px;
+   font-weight: bold;
+}
+.main__title input {
+   height: 40px;
+   text-align: center;
+   border: 2px solid #6d7682;
+   background: none;
+   border-radius: 5px;
+   padding: 0 16px;
+   color: #6d7682;
+   margin: 58px 14px 0 14px;
+}
+
+.aboutme {
+   max-width: 900px;
+   margin: auto;
+   text-align: center;
+   padding-bottom: 97px;
+}
+.aboutme__title h2 {
+   font-size: 33px;
+   text-transform: uppercase;
+   margin: 108px 0 31px;
+   color: #263244;
+   font-weight: bold;
+}
+.aboutme__title img {
+   padding-bottom: 60px;
+}
+.aboutme__fotca {
+   padding-bottom: 25px;
+}
+.aboutme__text {
+   font-size: 17px;
+   color: #3f495a;
+   text-align: left;
+}
+.aboutme__text p {
+   padding-bottom: 41px;
+}
+.aboutme__button {
+   background: url(../img/iconca.png) 11px 9px no-repeat;
+   padding-left: 22px;
+   border: 2px solid #6d7682;
+   border-radius: 5px;
+   padding: 9px 10px 9px 30px;
+   font-size: 16px;
+   color: #3f495a;
+}
+
+.whatcanido-bg {
+   height: 522px;
+   background: url(../img/kartinka_phona.jpg) center/cover no-repeat;
+}
+.whatcanido {
+   text-align: center;
+   max-width: 1280px;
+   margin: auto;
+}
+.whatcanido__title h2 {
+   font-size: 33px;
+   text-transform: uppercase;
+   padding: 106px 0 32px 0;
+   color: #263244;
+   font-weight: bold;
+}
+.whatcanido__title img {
+   padding-bottom: 107px;
+}
+.whatcanido__skills {
+   display: flex;
+   justify-content: space-between;
+}
+.whatcanido__skills div {
+   width: 260px;
+}
+.whatcanido__skills h3 {
+   font-size: 18px;
+   color: #cf7600;
+   padding: 35px 0 14px 0;
+}
+.whatcanido__skills p {
+   font-size: 16px;
+   color: #3f495a;
+}
+
+.cases {
+   max-width: 1170px;
+   margin: auto;
+   padding-bottom: 200px;
+}
+.cases__title {
+   text-align: center;
+}
+.cases__title h2 {
+   padding: 104px 0 30px 0;
+   font-size: 33px;
+   text-transform: uppercase;
+   color: #263244;
+   font-weight: bold;
+}
+.cases__title img {
+   padding-bottom: 36px;
+}
+.cases__title {
+   color: #3f495a;
+   font-size: 16px;
+   padding-bottom: 39px;
+}
+.cases__scrol {
+   padding-bottom: 38px;
+}
+.cases__undertext {
+   display: flex;
+   color: #384354;
+}
+.cases__undertext p {
+   font-size: 16px;
+}
+.cases__undertext-client h3 {
+   font-size: 25px;
+   padding-bottom: 15px;
+   padding-right: 190px;
+   text-transform: uppercase;
+   font-family: "Franklin Gothic", Arial, sans-serif;
+}
+.cases__undertext-client p {
+   font-family: "Calibri", Arial, sans-serif;
+   padding-bottom: 15px;
+}
+.cases__undertext-clientsite {
+   padding-bottom: 20px;
+}
+.cases__undertext a {
+   background-color: #63b5ae;
+   border-radius: 5px;
+   padding: 10px 42px;
+   font-size: 21px;
+   font-family: "Franklin Gothic", Arial, sans-serif;
+   color: #fff;
+}
+.cases__undertext-projectname h3 {
+   font-size: 25px;
+   font-family: "Franklin Gothic", Arial, sans-serif;
+   color: #384354;
+   line-height: 25px;
+}
+.cases__undertext-projectname p {
+   font-size: 21px;
+   font-family: "Calibri", Arial, sans-serif;
+   line-height: 25px;
+   color: #3f495a;
+}
+
+.costcalculation {
+   max-width: 891px;
+   margin: auto;
+   padding-bottom: 138px;
+}
+.price h2 {
+   font-family: FranklinGothic-Medium, Arial, sans-serif;
+   font-weight: normal;
+   font-size: 46px;
+   letter-spacing: -0.04em;
+   text-align: center;
+   color: #1c2534;
+   padding-bottom: 10px;
+}
+.price h3 {
+   font-family: FranklinGothic-Medium, Arial, sans-serif;
+   font-weight: normal;
+   font-size: 29px;
+   letter-spacing: 0.02em;
+   color: #1c2534;
+   padding: 44px 0 22px 0;
+}
+.price select {
+   width: 891px;
+   height: 57px;
+   appearance: none;
+   background: url(../img/strelka.png) right no-repeat;
+   background-position-x: calc(100% - 31px);
+   background-color: #eee;
+   font-family: FranklinGothic-Medium, Arial, sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   color: #737373;
+}
+.price img {
+   padding: 37px 0 23px 0;
+}
+.costcalculation__itogi {
+   display: flex;
+   justify-content: space-between;
+   font-family: FranklinGothic-Medium, Arial, sans-serif;
+   font-weight: normal;
+   font-size: 21px;
+   letter-spacing: 0.02em;
+   line-height: 25px;
+   color: #1c2534;
+}
+.costcalculation__itogi p {
+   padding-bottom: 17px;
+}
+.costcalculation__itogi-price {
+   font-size: 29px;
+}
+
+.statistics-bg {
+   height: 522px;
+   background: url(../img/fon2.jpg) center/cover no-repeat;
+}
+.statistics {
+   text-align: center;
+   max-width: 1130px;
+   margin: auto;
+}
+.statistics__title h2 {
+   font-size: 33px;
+   text-transform: uppercase;
+   padding: 106px 0 32px 0;
+   color: #263244;
+   font-weight: bold;
+}
+.statistics__title img {
+   padding-bottom: 89px;
+}
+.statistics__skills {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+.statistics__skills div {
+   width: 260px;
+}
+.statistics__skills h3 {
+   font-size: 38px;
+   color: #323e4f;
+   font-family: "Impact", Arial, sans-serif;
+   padding: 35px 0 14px 0;
+}
+.statistics__skills p {
+   font-size: 16px;
+   color: #323e4f;
+   font-family: Arial, sans-serif;
+}
+
+.reviews {
+   max-width: 900px;
+   margin: auto;
+   text-align: center;
+   padding-bottom: 97px;
+}
+.reviews__title h2 {
+   font-size: 33px;
+   text-transform: uppercase;
+   margin: 104px 0 31px;
+   color: #263244;
+   font-weight: bold;
+}
+.reviews__title img {
+   padding-bottom: 58px;
+}
+.reviews__fotca {
+   padding-bottom: 35px;
+}
+.reviews__text {
+   font-size: 17px;
+   color: #3f495a;
+   text-align: left;
+   font-family: "Calibri", Arial, sans-serif;
+   letter-spacing: -0.06em;
+   line-height: 20px;
+   text-align: center;
+   color: #243042;
+}
+.reviews__text p {
+   padding-bottom: 34px;
+}
+.reviews__scrol img {
+   padding: 11px 7px;
+}
+
+.contacts__bg {
+   background: url(../img/fon3.jpg) 100%/100% no-repeat;
+}
+.contacts {
+   height: 800px;
+   max-width: 735px;
+   margin: auto;
+   color: #fff;
+   text-align: center;
+}
+.contacts__title h2 {
+   font-family: FranklinGothic, Arial, sans-serif;
+   font-weight: normal;
+   font-size: 33px;
+   letter-spacing: -0.06em;
+   color: #fff;
+   padding: 95px 0 25px 0;
+   text-transform: uppercase;
+}
+.contacts__title p {
+   font-family: Calibri, Arial, sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   padding-bottom: 43px;
+   letter-spacing: -0.06em;
+   line-height: 20px;
+   text-align: center;
+   color: #fff;
+}
+.contacts__data {
+   display: flex;
+   justify-content: space-between;
+}
+.contacts__data div {
+   width: 156px;
+}
+.contacts__data img {
+   padding-bottom: 7px;
+}
+.contacts__data p {
+   padding-bottom: 31px;
+}
+.contacts__hissms P {
+   padding-bottom: 41px;
+   text-transform: uppercase;
+   font-family: FranklinGothic-Medium, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 21px;
+   letter-spacing: -0.04em;
+   color: #fff;
+}
+.contacts__form input {
+   display: block;
+   padding-bottom: 20px;
+   float: left;
+}
+.contacts__form-name {
+   width: 353px;
+   margin-right: 29px;
+}
+.contacts__form-email {
+   width: 353px;
+}
+.contacts__form-sms {
+   margin-top: 14px;
+}
+.contacts__form-submit {
+   padding: 15px 17px 10px 17px;
+   border-radius: 5px;
+   margin-top: 28px;
+   margin-left: 320px;
+   color: #fff;
+   background: none;
+   border: 2px solid #fff;
+}
+
+.footer {
+   text-align: center;
+   padding: 40px 0;
+   background-color: #354051;
+   font-family: ArialMT, Arial, sans-serif;
+   font-weight: normal;
+   font-size: 13px;
+   letter-spacing: -0.06em;
+   color: #fff;
+}

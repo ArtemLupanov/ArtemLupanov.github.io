@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Артем Лупанов - Веб Разработчик</title>
+   <title>MyFirstProject</title>
+   <link rel="stylesheet" href="../src/css/reset.css">
+   <link rel="stylesheet" href="../src/css/style.css">
 </head>
 
 <body>
+
    <header class="header">
       <nav class="header__nav">
          <div class="header__nav-logo">
-            Артем Лупанов
+            <p>Андрей Браун</p>
          </div>
          <div class="header__nav-menu">
-            <ul>
+            <ul class="header__nav-menuul">
                <li>Обо мне</li>
                <li>Услуги</li>
                <li>Кейсы</li>
@@ -26,140 +29,264 @@
          </div>
       </nav>
    </header>
+
    <div class="main">
-      <div class="title__container">
-         <h1>Привет<br>Я Артем Лупанов</h1>
+      <div class="main__title">
+         <h1>Привет<br>Я Андрей Браун</h1>
          <h4>Фулл стек веб разработчик</h4>
          <input type="submit" value="Обо мне">
          <input type="submit" value="Мои работы">
       </div>
    </div>
+
    <div class="aboutme">
-      <h2>Обо мне</h2>
-      <img src="../src/img/cherta.png" alt="Черта"><br>
-      <img src="../src/img/obomne.jpg" alt="Типо я">
-      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные встретил дал свой
-         своих взобравшись города толку обеспечивает текстами его прямо. Толку большого ему семантика, всемогущая
-         предупреждал лучше своего.</p>
-      <p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Составитель вскоре, прямо
-         необходимыми рукопись большого дорогу? Снова, образ. Что пор последний это имени страну всемогущая жизни
-         пунктуация всеми щеке!</p>
-      <input type="submit" value="Скачать резюме">
-   </div>
-   <div class="whatcanido">
-      <h2>Что я умею</h2>
-      <img src="../src/img/cherta.png" alt="Черта"><br>
-      <img src="../src/img/nout.png" alt="Ноут">
-      <h3>Веб дизайн</h3>
-      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Но встретил пор рыбного
-         лучше дороге реторический, рукопись свою необходимыми вопрос вскоре подзаголовок текста щеке собрал родного
-         океана назад раз!</p>
-      <img src="../src/img/znak.png" alt="Знак">
-      <h3>Разработка</h3>
-      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Но встретил пор рыбного
-         лучше дороге реторический, рукопись свою необходимыми вопрос вскоре подзаголовок текста щеке собрал родного
-         океана назад раз!</p>
-      <img src="../src/img/raketa.png" alt="Ракета">
-      <h3>СЕО оптимизация</h3>
-      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Но встретил пор рыбного
-         лучше дороге реторический, рукопись свою необходимыми вопрос вскоре подзаголовок текста щеке собрал родного
-         океана назад раз!</p>
-      <img src="../src/img/gramofon.png" alt="Грамофон">
-      <h3>Маркетинг</h3>
-      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Но встретил пор рыбного
-         лучше дороге реторический, рукопись свою необходимыми вопрос вскоре подзаголовок текста щеке собрал родного
-         океана назад раз!</p>
-   </div>
-   <div class="cases">
-      <h2>Что я умею</h2>
-      <img src="../src/img/cherta.png" alt="Черта"><br>
-      <p>Кейсов пока нет</p>
-      <h3>Client</h3>
-      <p>Какая то компания</p>
-      <h3>Website</h3>
-      <a href="https://vk.com/school_brown">https://vk.com/school_brown</a>
-      <h3>Названи проекта</h3>
-      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безорфографичный его
-         жизни, путь заманивший залетают гор свою но до рукописи, собрал прямо? Парадигматическая грамматики гор
-         деревни, знаках напоивший снова.</p>
-   </div>
-   <form action="#">
-      <div class="price">
-         <h2>Расчет стоимости</h2>
-         <h3>Тип сайта</h3>
-         <select name="tip" id="">
-            <option value="">Одностраничный</option>
-            <option value="">Магазин</option>
-         </select>
-         <h3>Дизайн</h3>
-         <select name="tip" id="">
-            <option value="">Делаю я</option>
-            <option value="">Делаете вы</option>
-         </select>
-         <h3>Адаптивность</h3>
-         <select name="tip" id="">
-            <option value="">Есть</option>
-            <option value="">Нет</option>
-         </select>
-         <p>Сроки</p>
-         <p>Завтра</p>
-         <p>Стоимость</p>
-         <p>Бесплатно</p>
-      </div>
-   </form>
-   <div class="statistics">
-      <h2>Статистика</h2>
-      <img src="../src/img/smile.png" alt="Черта"><br>
-      <h3>0</h3>
-      <p>Счастливых клиентов</p>
-      <img src="../src/img/skobki.png" alt="Черта">
-      <h3>0</h3>
-      <p>Часов работы</p>
-      <img src="../src/img/galochka.png" alt="Черта">
-      <h3>0</h3>
-      <p>Проектов завершено</p>
-      <img src="../src/img/kubok.png" alt="Черта">
-      <h3>0</h3>
-      <p>Наград получено</p>
-   </div>
-   <div class="reviews">
-      <h2>Отзывы</h2>
-      <img src="../src/img/cherta.png" alt="Черта"><br>
-      <img src="../src/img/fotka.png" alt="Фотка">
-      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Грустный свой
-         реторический снова речью решила свою, необходимыми вопроса правилами пояс собрал курсивных если коварный, лучше
-         имеет гор путь возвращайся.</p>
-      <p><b>Михаил</b>, Ген директор ПАО “Газпром”.</p>
-   </div>
-   <footer>
-      <div class="contacts">
-         <h2>Мои контакты</h2>
+      <div class="aboutme__title">
+         <h2>Обо мне</h2>
          <img src="../src/img/cherta.png" alt="Черта"><br>
-         <P>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рекламных это что,
-            предупреждал лучше бросил проектах коварных моей сих точках текст подзаголовок свой текстов великий не он
-            путь заглавных?</P>
-         <form action="#">
-            <input type="text" name="name" placeholder="Имя">
-            <input type="text" name="email" placeholder="Email"><br>
-            <textarea name="" id="" cols="73" rows="9.5" placeholder="Сообщение"></textarea><br>
-            <input type="submit" value="Отправить"><br>
-         </form>
-         <img src="../src/img/фб.png" alt="">
-         <img src="../src/img/твитер.png" alt="">
-         <img src="../src/img/мяч.png" alt="">
-         <img src="../src/img/киса.png" alt="">
-         <img src="../src/img/инст.png" alt="">
-         <img src="../src/img/ин.png" alt="">
-         <div style="position:relative;overflow:hidden;"><a
-               href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
-               style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a
-               href="https://yandex.ru/maps/geo/murom/53047386/?ll=42.024114%2C55.553613&utm_medium=mapframe&utm_source=maps&z=12.6"
-               style="color:#eee;font-size:12px;position:absolute;top:14px;">Муром — Яндекс.Карты</a><iframe
-               src="https://yandex.ru/map-widget/v1/-/CCU4bWqwKB" width="560" height="400" frameborder="1"
-               allowfullscreen="true" style="position:relative;"></iframe></div>
-         <p>Copyright © 2021 Андрей Браун. Design by Web</p>
       </div>
+      <div class="aboutme__fotca">
+         <img src="../src/img/fotca.png" alt="Man">
+      </div>
+      <div class="aboutme__text">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
+            ornare diam. Sed commodo
+            nibh ante
+            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo
+            nibh ante
+            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+      </div>
+      <a class="aboutme__button" href="#">Скачать резюме</a>
+   </div>
+
+   <div class="whatcanido-bg">
+      <div class="whatcanido">
+         <div class="whatcanido__title">
+            <h2>Что я умею</h2>
+            <img src="../src/img/cherta.png" alt="Черта">
+         </div>
+         <div class="whatcanido__skills">
+            <div class="whatcanido__skills-nout">
+               <img src="../src/img/nout.png" alt="Ноут">
+               <h3>Веб дизайн</h3>
+               <div>
+                  <p>Lorem ipsum dolor sit amet placerat
+                     facilisis felis mi in tempus eleifend
+                     pellentesque natoque etiam.</p>
+               </div>
+            </div>
+            <div class="whatcanido__skills-znak">
+               <div><img src="../src/img/znak.png" alt="Знак"></div>
+               <h3>Разработка</h3>
+               <div>
+                  <p>Lorem ipsum dolor sit amet placerat
+                     facilisis mi in tempus eleifend
+                     pellentesque.</p>
+               </div>
+            </div>
+            <div class="whatcanido__skills-raketa">
+               <div><img src="../src/img/raketa.png" alt="Ракета"></div>
+               <h3>СЕО оптимизация</h3>
+               <div>
+                  <p>Lorem ipsum dolor sit amet placerat
+                     facilisis felis mi in tempus eleifend
+                     pellentesque natoque etiam.</p>
+               </div>
+            </div>
+            <div class="whatcanido__skills-gramofon">
+               <div><img src="../src/img/gramofon.png" alt="Грамофон"></div>
+               <h3>Маркетинг</h3>
+               <div>
+                  <p>Lorem ipsum dolor sit amet placerat
+                     facilisis felis mi in tempus eleifend
+                     pellentesque natoque .</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="cases">
+      <div class="cases__title">
+         <h2>Кейсы</h2>
+         <img src="../src/img/cherta.png" alt="Черта">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh
+            ante facilisis.</p>
+      </div>
+      <div class="cases__scrol">
+         <img src="../src/img/photka.jpg" alt="photka">
+      </div>
+      <div class="cases__undertext">
+         <div class="cases__undertext-client">
+            <h3>Client:</h3>
+            <p>Какая то компания</p>
+            <h3>Website:</h3>
+            <div class="cases__undertext-clientsite">
+               <p>http://www.somedomain.com</p>
+            </div>
+            <a href="http://www.somedomain.com">VISIT LIVE SITE</a>
+         </div>
+         <div class="cases__undertext-projectname">
+            <h3>Названи проекта</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et
+               dolore magna
+               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <div class="costcalculation">
+      <form action="#">
+         <div class="price">
+            <h2>Расчет стоимости</h2>
+            <div>
+               <h3>Тип сайта</h3>
+            </div>
+            <select name="tip" id="">
+               <option value="">Одностраничный</option>
+               <option value="">Магазин</option>
+            </select>
+            <h3>Дизайн</h3>
+            <select onblur name="tip" id="">
+               <option value="">Делаю я</option>
+               <option value="">Делаете вы</option>
+            </select>
+            <h3>Адаптивность</h3>
+            <select name="tip" id="">
+               <option value="">Есть</option>
+               <option value="">Нет</option>
+            </select>
+            <img src="../src/img/liniya_itoga.jpg" alt="">
+            <div class="costcalculation__itogi">
+               <div class="costcalculation__itogi-sroci">
+                  <p>Сроки</p>
+                  <p>Стоимость</p>
+               </div>
+               <div class="costcalculation__itogi-price">
+                  <p>Завтра</p>
+                  <p>Бесплатно</p>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <div class="statistics-bg">
+      <div class="statistics">
+         <div class="statistics__title">
+            <h2>Немного статистики</h2>
+            <img src="../src/img/cherta.png" alt="Черта">
+         </div>
+         <div class="statistics__skills">
+            <div class="whatcanido__skills-nout">
+               <img src="../src/img/smile.png" alt="Smile">
+               <h3>120</h3>
+               <div>
+                  <p>Счастливых клиентов</p>
+               </div>
+            </div>
+            <div class="whatcanido__skills-znak">
+               <div><img src="../src/img/skobki.png" alt="Skobki"></div>
+               <h3>4600</h3>
+               <div>
+                  <p>Часов работы</p>
+               </div>
+            </div>
+            <div class="whatcanido__skills-raketa">
+               <div><img src="../src/img/galochka.png" alt="Galochka"></div>
+               <h3>340</h3>
+               <div>
+                  <p>Проектов завершено</p>
+               </div>
+            </div>
+            <div class="whatcanido__skills-gramofon">
+               <div><img src="../src/img/kubok.png" alt="Kubok"></div>
+               <h3>23</h3>
+               <div>
+                  <p>Награды получено</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="reviews">
+      <div class="reviews__title">
+         <h2>Отзывы</h2>
+         <img src="../src/img/cherta.png" alt="Черта"><br>
+      </div>
+      <div class="reviews__fotca">
+         <img src="../src/img/fotca2.png" alt="Man">
+      </div>
+      <div class="reviews__text">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo
+            nibh ante
+            facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+         <p>
+            <b>Михаил</b>, Ген директор ПАО “Газпром”.
+         </p>
+
+      </div>
+      <div class="reviews__scrol">
+         <img src="../src/img/orange.png" alt="orange">
+         <img src="../src/img/orangekopi.png" alt="orangekopi">
+         <img src="../src/img/orangekopi.png" alt="orangekopi">
+      </div>
+   </div>
+
+   <div class="contacts__bg">
+      <div class="contacts">
+         <div class="contacts__title">
+            <h2>Мои контакты</h2>
+            <img src="../src/img/cherta.png" alt="Черта"><br>
+            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </P>
+         </div>
+         <div class="contacts__data">
+            <div class="contacts__data-adres">
+               <img src="../src/img/geo.png" alt="geo">
+               <p>Санкт-Петербург <br>
+                  Невский проспект 11</p>
+            </div>
+            <div class="contacts__data-email">
+               <img src="../src/img/konvert.png" alt="konvert">
+               <p>info@companyname.com</p>
+            </div>
+            <div class="contacts__data-phone">
+               <img src="../src/img/tryba.png" alt="tryba">
+               <p>+7 999 999-99-99</p>
+            </div>
+         </div>
+         <div class="contacts__hissms">
+            <p>Оставьте мне сообщение</p>
+         </div>
+         <form class="contacts__form" action="#">
+            <input class="contacts__form-name" type="text" name="name" placeholder="Имя">
+            <input class="contacts__form-email" type="text" name="email" placeholder="Email">
+            <textarea class="contacts__form-sms" name="" id="" cols="103px" rows="9.5"
+               placeholder="Сообщение"></textarea><br>
+            <input class="contacts__form-submit" type="submit" value="Отправить"><br>
+         </form>
+      </div>
+   </div>
+
+   <div class="map">
+      <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a
+            href="https://yandex.ru/maps/geo/murom/53047386/?ll=42.024114%2C55.553613&utm_medium=mapframe&utm_source=maps&z=12.6"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Муром — Яндекс.Карты</a><iframe
+            src="https://yandex.ru/map-widget/v1/-/CCU4bWqwKB" width="100%" height="356px" frameborder="1"
+            allowfullscreen="true" style="position:relative;"></iframe>
+      </div>
+   </div>
+
+   <footer class="footer">
+      <p>Copyright © 2021 Андрей Браун. Design by Web</p>
    </footer>
 </body>
+
 
 </html>
