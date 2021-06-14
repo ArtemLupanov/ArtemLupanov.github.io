@@ -1,10 +1,50 @@
 body {
    font-family: Arial, sans-serif;
 }
+
+.preloader{
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   z-index: 3;
+   transition: all 1s;
+   opacity: 1;
+   visibility: visible;
+}
+.loader{
+   width: 75px;
+   height: 75px;
+   border: 10px solid white;
+   border-radius: 50%;
+   border-top-color:#f58b00;
+   position:absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   animation: 1s load infinite linear;
+}
+@keyframes load {
+   from{
+      transform: translate(-50%, -50%) rotate(0deg);
+   }
+   to{
+      transform: translate(-50%, -50%) rotate(360deg);
+   }
+}
+.done{
+   opacity: 0;
+   visibility: hidden;
+}
+
 .header {
    height: 60px;
    width: 100%;
    background-color: #344051;
+   position: fixed;
+   
 }
 .header__nav-logo {
    font-size: 24px;
@@ -12,18 +52,70 @@ body {
    color: #fff;
    padding-left: 388px;
    float: left;
+   animation: comming ease 2s;
+}
+@keyframes comming{
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
 }
 .header__nav-menu {
    float: left;
    padding-left: 432px;
 }
-.header__nav-menu li {
-   float: left;
+.header__nav-menu li{
+   opacity: 0;
+   animation: topshift 0.4s ease forwards;
+}
+@keyframes topshift {
+   from{
+      opacity: 0;
+      margin-top: -80px;
+   }
+   to{
+      opacity: 1;
+      margin-top: 0;
+   }
+}
+.header__nav-menu li:nth-child(2){
+   animation-delay: 0.4s;
+}
+.header__nav-menu li:nth-child(3){
+   animation-delay: 0.8s;
+}
+.header__nav-menu li:nth-child(4){
+   animation-delay: 1.2s;
+}
+.header__nav-menu li:nth-child(5){
+   animation-delay: 1.6s;
+}
+.header__nav-menu li:nth-child(6){
+   animation-delay: 2s;
+}
+.header__nav-menu li a{
+   display: inline-block;
    color: #fff;
    margin-right: 40px;
    font-size: 16px;
    line-height: 60px;
    text-transform: uppercase;
+   transition: 0.1s;
+   transform:scale(1);
+}
+.header__nav-menu li a:visited{
+   color: #fff;
+}
+.header__nav-menu li a:hover{
+   color: #f58b00;
+}
+.header__nav-menu li a:active{
+   transform:scale(1.1);
+}
+.header__nav-menuul{
+   display: flex;
 }
 
 .main {
@@ -37,18 +129,32 @@ body {
    margin: 430px 0 0 404px;
    color: #2c384a;
    text-align: center;
+   opacity: 0;
+   animation: mainshift 0.4s forwards ease;
+   animation-delay: 2.4s;
+}
+@keyframes mainshift {
+   from{
+      opacity: 0;
+      margin-left: -500px;
+   }
+   to{
+      opacity: 1;
+      margin-left: 404px;
+   }
 }
 .main__title h1 {
    font-size: 80px;
    font-weight: bold;
 }
 .main__title h4 {
-   font-size: 20px;
+   font-size: 21px;
    color: #79818d;
    padding-top: 40px;
    font-weight: bold;
 }
 .main__title input {
+   font-size: 18px;
    height: 40px;
    text-align: center;
    border: 2px solid #6d7682;
@@ -57,6 +163,15 @@ body {
    padding: 0 16px;
    color: #6d7682;
    margin: 58px 14px 0 14px;
+   transition: all 0.2s;
+   transform: scale(1);
+}
+.main__title input:hover{
+   background-color: #2c384a;
+   color: #fff;
+}
+.main__title input:active{
+   transform: scale(1.1);
 }
 
 .aboutme {
@@ -87,6 +202,7 @@ body {
    padding-bottom: 41px;
 }
 .aboutme__button {
+   display: inline-block;
    background: url(../img/iconca.png) 11px 9px no-repeat;
    padding-left: 22px;
    border: 2px solid #6d7682;
@@ -94,6 +210,15 @@ body {
    padding: 9px 10px 9px 30px;
    font-size: 16px;
    color: #3f495a;
+   transition:all 0.2s;
+   transform: scale(1);
+}
+.aboutme__button:hover{
+   background-color: #2c384a;
+   color: #fff;
+}
+.aboutme__button:active{
+   transform: scale(1.1)
 }
 
 .whatcanido-bg {
@@ -176,16 +301,22 @@ body {
    font-family: "Calibri", Arial, sans-serif;
    padding-bottom: 15px;
 }
-.cases__undertext-clientsite {
-   padding-bottom: 20px;
-}
 .cases__undertext a {
+   display: inline-block;
    background-color: #63b5ae;
    border-radius: 5px;
    padding: 10px 42px;
    font-size: 21px;
    font-family: "Franklin Gothic", Arial, sans-serif;
    color: #fff;
+   transform: scale(1);
+   transition:all 0.2s;
+}
+.cases__undertext a:hover{
+   background-color: #f58b00;
+}
+.cases__undertext a:active{
+   transform: scale(1.1);
 }
 .cases__undertext-projectname h3 {
    font-size: 25px;
@@ -194,7 +325,7 @@ body {
    line-height: 25px;
 }
 .cases__undertext-projectname p {
-   font-size: 21px;
+   font-size: 20px;
    font-family: "Calibri", Arial, sans-serif;
    line-height: 25px;
    color: #3f495a;
@@ -212,7 +343,7 @@ body {
 .price h2 {
    font-family: FranklinGothic-Medium, Arial, sans-serif;
    font-weight: normal;
-   font-size: 46px;
+   font-size: 45px;
    letter-spacing: -0.04em;
    text-align: center;
    color: #1c2534;
@@ -261,7 +392,7 @@ body {
 
 .statistics-bg {
    height: 522px;
-   background: url(../img/fon2.jpg) center/cover no-repeat;
+   background: url(../img/fon2.jpg) center/cover fixed;
 }
 .statistics {
    text-align: center;
@@ -376,6 +507,27 @@ body {
 .contacts__data p {
    padding-bottom: 31px;
 }
+.contacts__data-adres{
+   transform: scale(1);
+   transition: all 0.2s;
+}
+.contacts__data-adres:hover{
+   transform: scale(1.1);
+}
+.contacts__data-email{
+   transform: scale(1);
+   transition: all 0.2s;
+}
+.contacts__data-email:hover{
+   transform: scale(1.1);
+}
+.contacts__data-phone{
+   transform: scale(1);
+   transition: all 0.2s;
+}
+.contacts__data-phone:hover{
+   transform: scale(1.1);
+}
 .contacts__hissms P {
    padding-bottom: 41px;
    text-transform: uppercase;
@@ -416,6 +568,15 @@ body {
    color: #fff;
    background: none;
    border: 2px solid #fff;
+   transition:all 0.2s;
+   transform: scale(1);
+}
+.contacts__form-submit:hover{
+   background-color: #fff;
+   color: black;
+}
+.contacts__form-submit:active{
+   transform: scale(1.1);
 }
 
 .footer {
