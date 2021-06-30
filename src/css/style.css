@@ -1005,6 +1005,7 @@ body._lock {
   margin: auto;
   text-align: center;
   padding-bottom: 97px;
+  padding: 0 10px;
 }
 .reviews__title h2 {
   font-size: 33px;
@@ -1208,7 +1209,7 @@ body._lock {
     color: #fff;
   }
   .contacts__form {
-    padding: 0 5px;
+    padding: 0 10px;
     text-align: center;
     width: 100%;
     margin: 0 auto;
