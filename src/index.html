@@ -18,29 +18,36 @@
    </div>
 
    <header class="header">
-      <nav class="header__nav">
+      <nav class="header__nav _container">
          <div class="header__nav-logo">
-            <p>Андрей Браун</p>
+            <a href="#" class="header__nav-logo-link">Андрей Браун</a>
+         </div>
+         <div class="header__icon">
+            <span></span>
          </div>
          <div class="header__nav-menu">
-            <ul class="header__nav-menuul">
-               <li><a href="#"> Услуги </a></li>
-               <li><a href="#"> Кейсы </a></li>
-               <li><a href="#"> Прайс </a></li>
-               <li><a href="#"> Отзывы </a></li>
-               <li><a href="#"> Контакты</a></li>
-               <li><a href="#"> Обо мне </a></li>
+            <ul class="header__nav-menu-ul">
+               <li><a href="#" class="header__nav-menu-ul-link"> Обо мне </a></li>
+               <li><a href="#" class="header__nav-menu-ul-link"> Услуги </a></li>
+               <li><a href="#" class="header__nav-menu-ul-link"> Кейсы </a></li>
+               <li><a href="#" class="header__nav-menu-ul-link"> Прайс </a></li>
+               <li><a href="#" class="header__nav-menu-ul-link"> Отзывы </a></li>
+               <li><a href="#" class="header__nav-menu-ul-link"> Контакты</a></li>
             </ul>
          </div>
       </nav>
    </header>
 
    <div class="main">
-      <div class="main__title">
-         <h1>Привет<br>Я Андрей Браун</h1>
-         <h4>Фулл стек веб разработчик</h4>
-         <input type="button" value="Обо мне">
-         <input type="button" value="Мои работы">
+      <div class="main__title _container">
+         <div class="main__title-text">
+            <h1>Привет<br>Я Андрей Браун</h1>
+            <h4>Фулл стек веб разработчик</h4>
+         </div>
+         <div class="main__title-botton">
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
+         </div>
       </div>
    </div>
 
@@ -65,7 +72,7 @@
    </div>
 
    <div class="whatcanido-bg">
-      <div class="whatcanido">
+      <div class="whatcanido _container">
          <div class="whatcanido__title">
             <h2>Что я умею</h2>
             <img src="../src/img/cherta.png" alt="Черта">
@@ -111,7 +118,7 @@
       </div>
    </div>
 
-   <div class="cases">
+   <div class="cases _container">
       <div class="cases__title">
          <h2>Кейсы</h2>
          <img src="../src/img/cherta.png" alt="Черта">
@@ -175,6 +182,7 @@
                   <p>Бесплатно</p>
                </div>
             </div>
+            <div class="costcalculation__button"><input type="button" value="Оставить заявку"></div>
          </div>
       </form>
    </div>
@@ -233,7 +241,6 @@
          <p>
             <b>Михаил</b>, Ген директор ПАО “Газпром”.
          </p>
-
       </div>
       <div class="reviews__scrol">
          <img src="../src/img/orange.png" alt="orange">
@@ -270,8 +277,9 @@
          <form class="contacts__form" action="#">
             <input class="contacts__form-name" type="text" name="name" placeholder="Имя" cols="0" rows="0">
             <input class="contacts__form-email" type="text" name="email" placeholder="Email">
-            <textarea class="contacts__form-sms" name="" id="" placeholder="Сообщение"></textarea><br>
-            <input class="contacts__form-submit" type="submit" value="Отправить"><br>
+            <textarea class="contacts__form-sms" name="" id="" placeholder="Сообщение"></textarea>
+            <div class="contacts__form-submit"><input class="contacts__form-submit1" type="submit" value="Отправить">
+            </div>
          </form>
       </div>
    </div>
@@ -291,8 +299,7 @@
       <p>Copyright © 2021 Андрей Браун. Design by Web</p>
    </footer>
 
-   <script src="../src/js/preloader.js"></script>
+   <script src="../src/js/script.js"></script>
 </body>
-
 
 </html>
