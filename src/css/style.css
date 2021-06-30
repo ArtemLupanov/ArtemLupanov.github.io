@@ -1034,7 +1034,7 @@ body._lock {
   padding-bottom: 34px;
 }
 .reviews__scrol img {
-  padding: 11px 7px;
+  padding: 11px 7px 100px 7px;
 }
 
 @media (min-width: 1024px) {
