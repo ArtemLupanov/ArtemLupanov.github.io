@@ -480,7 +480,7 @@ body._lock {
 }
 .aboutme__text p {
   text-align: justify;
-  padding-bottom: 41px;
+  padding: 0 10px 41px 10px;
 }
 .aboutme__button {
   display: inline-block;
