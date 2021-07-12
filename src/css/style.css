@@ -5,6 +5,43 @@ body._lock {
   overflow: hidden;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 7;
+  transition: all 1s;
+  opacity: 1;
+  visibility: visible;
+}
+.loader {
+  width: 75px;
+  height: 75px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top-color: #f58b00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 1s load infinite linear;
+}
+@keyframes load {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
 @keyframes topshift {
   from {
     opacity: 0;
@@ -480,7 +517,7 @@ body._lock {
 }
 .aboutme__text p {
   text-align: justify;
-  padding: 0 10px 41px 10px;
+  padding-bottom: 41px;
 }
 .aboutme__button {
   display: inline-block;
