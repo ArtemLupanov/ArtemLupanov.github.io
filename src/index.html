@@ -27,12 +27,12 @@
          </div>
          <div class="header__nav-menu">
             <ul class="header__nav-menu-ul">
-               <li><a href="#" class="header__nav-menu-ul-link"> Обо мне </a></li>
-               <li><a href="#" class="header__nav-menu-ul-link"> Услуги </a></li>
-               <li><a href="#" class="header__nav-menu-ul-link"> Кейсы </a></li>
-               <li><a href="#" class="header__nav-menu-ul-link"> Прайс </a></li>
-               <li><a href="#" class="header__nav-menu-ul-link"> Отзывы </a></li>
-               <li><a href="#" class="header__nav-menu-ul-link"> Контакты</a></li>
+               <li><a href="#aboutMe" class="header__nav-menu-ul-link"> Обо мне </a></li>
+               <li><a href="#whatCanIDo" class="header__nav-menu-ul-link"> Услуги </a></li>
+               <li><a href="#cases" class="header__nav-menu-ul-link"> Кейсы </a></li>
+               <li><a href="#price" class="header__nav-menu-ul-link"> Прайс </a></li>
+               <li><a href="#reviews" class="header__nav-menu-ul-link"> Отзывы </a></li>
+               <li><a href="#contacts" class="header__nav-menu-ul-link"> Контакты</a></li>
             </ul>
          </div>
       </nav>
@@ -51,33 +51,35 @@
       </div>
    </div>
 
-   <div class="aboutme">
-      <div class="aboutme__title">
+   <div class="aboutme" id="aboutMe">
+      <div class="aboutme__title _anim-items _anim-no-hide">
          <h2>Обо мне</h2>
          <img src="../src/img/cherta.png" alt="Черта"><br>
       </div>
-      <div class="aboutme__fotca">
+      <div class="aboutme__fotca _anim-items _anim-no-hide">
          <img src="../src/img/fotca.png" alt="Man">
       </div>
-      <div class="aboutme__text">
+      <div class="aboutme__text _anim-items _anim-no-hide">
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
             ornare diam. Sed commodo
             nibh ante
             facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+            commodo
             nibh ante
             facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
       </div>
-      <a class="aboutme__button" href="#">Скачать резюме</a>
+      <a class="aboutme__button _anim-items _anim-no-hide" href="#">Скачать резюме</a>
+   </div>
    </div>
 
    <div class="whatcanido-bg">
       <div class="whatcanido _container">
-         <div class="whatcanido__title">
+         <div class="whatcanido__title _anim-items _anim-no-hide" id="whatCanIDo">
             <h2>Что я умею</h2>
             <img src="../src/img/cherta.png" alt="Черта">
          </div>
-         <div class="whatcanido__skills">
+         <div class="whatcanido__skills _anim-items _anim-no-hide">
             <div class="whatcanido__skills-nout">
                <img src="../src/img/nout.png" alt="Ноут">
                <h3>Веб дизайн</h3>
@@ -118,7 +120,7 @@
       </div>
    </div>
 
-   <div class="cases _container">
+   <div class="cases _container" id="cases">
       <div class="cases__title">
          <h2>Кейсы</h2>
          <img src="../src/img/cherta.png" alt="Черта">
@@ -126,7 +128,22 @@
             ante facilisis.</p>
       </div>
       <div class="cases__scrol">
-         <img src="../src/img/photka.jpg" alt="photka">
+         <div class="cases__scrol-slider">
+            <a href="#image" class="content__image popup-link"><img id="cases-img1" src="../src/img/photka.jpg"
+                  alt="photka"></a>
+         </div>
+         <div class="cases__scrol-slider">
+            <a href="#image" class="content__image popup-link"><img id="cases-img2" src="../src/img/photka.jpg"
+                  alt="photka"></a>
+         </div>
+         <div class="cases__scrol-slider">
+            <a href="#image" class="content__image popup-link"><img id="cases-img3" src="../src/img/photka.jpg"
+                  alt="photka"></a>
+         </div>
+         <div class="cases__scrol-slider">
+            <a href="#image" class="content__image popup-link"><img id="cases-img4" src="../src/img/photka.jpg"
+                  alt="photka"></a>
+         </div>
       </div>
       <div class="cases__undertext">
          <div class="cases__undertext-client">
@@ -149,42 +166,43 @@
          </div>
       </div>
    </div>
-
-   <div class="costcalculation">
-      <form action="#">
-         <div class="price">
-            <h2>Расчет стоимости</h2>
-            <div>
-               <h3>Тип сайта</h3>
-            </div>
-            <select name="tip" id="">
-               <option value="">Одностраничный</option>
-               <option value="">Магазин</option>
-            </select>
-            <h3>Дизайн</h3>
-            <select onblur name="tip" id="">
-               <option value="">Делаю я</option>
-               <option value="">Делаете вы</option>
-            </select>
-            <h3>Адаптивность</h3>
-            <select name="tip" id="">
-               <option value="">Есть</option>
-               <option value="">Нет</option>
-            </select>
-            <img src="../src/img/liniya_itoga.jpg" alt="">
-            <div class="costcalculation__itogi">
-               <div class="costcalculation__itogi-sroci">
-                  <p>Сроки</p>
-                  <p>Стоимость</p>
+   <div class="costcalculationbg" id="price">
+      <div class="costcalculation">
+         <form action="#">
+            <div class="price">
+               <h2>Расчет стоимости</h2>
+               <div>
+                  <h3>Тип сайта</h3>
                </div>
-               <div class="costcalculation__itogi-price">
-                  <p>Завтра</p>
-                  <p>Бесплатно</p>
+               <select name="tip" id="siteType">
+                  <option value="1" data-price="1000" data-day="1" id="onPage" class="priceO">Одностраничный</option>
+                  <option value="2" data-price="10000" data-day="7" id="score" class="priceO">Магазин</option>
+               </select>
+               <h3>Дизайн</h3>
+               <select onblur name="tip" id="design">
+                  <option value="1" data-price="2000" data-day="1" id="iDo" class="priceO">Делаю я</option>
+                  <option value="2" data-price="0" data-day="0" id="youDo" class="priceO">Делаете вы</option>
+               </select>
+               <h3>Адаптивность</h3>
+               <select name="tip" id="adaptability">
+                  <option value="1" data-price="5000" data-day="2" id="thereIs" class="priceO">Есть</option>
+                  <option value="2" data-price="1000" data-day="1" id="no" class="priceO">Нет</option>
+               </select>
+               <img src="../src/img/liniya_itoga.jpg" alt="">
+               <div class="costcalculation__itogi">
+                  <div class="costcalculation__itogi-sroci">
+                     <p>Сроки</p>
+                     <p>Стоимость</p>
+                  </div>
+                  <div class="costcalculation__itogi-price">
+                     <p id="p1">Завтра</p>
+                     <p id="p2">Бесплатно</p>
+                  </div>
                </div>
+               <div class="costcalculation__button"><input type="button" value="Оставить заявку"></div>
             </div>
-            <div class="costcalculation__button"><input type="button" value="Оставить заявку"></div>
-         </div>
-      </form>
+         </form>
+      </div>
    </div>
 
    <div class="statistics-bg">
@@ -194,30 +212,30 @@
             <img src="../src/img/cherta.png" alt="Черта">
          </div>
          <div class="statistics__skills">
-            <div class="whatcanido__skills-nout">
+            <div class="statistics__skills-Smile">
                <img src="../src/img/smile.png" alt="Smile">
-               <h3>120</h3>
+               <h3 class="count">120</h3>
                <div>
                   <p>Счастливых клиентов</p>
                </div>
             </div>
-            <div class="whatcanido__skills-znak">
+            <div class="statistics__skills-Skobki">
                <div><img src="../src/img/skobki.png" alt="Skobki"></div>
-               <h3>4600</h3>
+               <h3 class="count">4600</h3>
                <div>
                   <p>Часов работы</p>
                </div>
             </div>
-            <div class="whatcanido__skills-raketa">
+            <div class="statistics__skills-Galochka">
                <div><img src="../src/img/galochka.png" alt="Galochka"></div>
-               <h3>340</h3>
+               <h3 class="count">340</h3>
                <div>
                   <p>Проектов завершено</p>
                </div>
             </div>
-            <div class="whatcanido__skills-gramofon">
+            <div class="statistics__skills-Kubok">
                <div><img src="../src/img/kubok.png" alt="Kubok"></div>
-               <h3>23</h3>
+               <h3 class="count">23</h3>
                <div>
                   <p>Награды получено</p>
                </div>
@@ -226,37 +244,65 @@
       </div>
    </div>
 
-   <div class="reviews">
+   <div class="reviews" id="reviews">
       <div class="reviews__title">
          <h2>Отзывы</h2>
          <img src="../src/img/cherta.png" alt="Черта"><br>
       </div>
-      <div class="reviews__fotca">
-         <img src="../src/img/fotca2.png" alt="Man">
-      </div>
-      <div class="reviews__text">
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo
-            nibh ante
-            facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
-         <p>
-            <b>Михаил</b>, Ген директор ПАО “Газпром”.
-         </p>
-      </div>
-      <div class="reviews__scrol">
-         <img src="../src/img/orange.png" alt="orange">
-         <img src="../src/img/orangekopi.png" alt="orangekopi">
-         <img src="../src/img/orangekopi.png" alt="orangekopi">
+      <div class="reviews__scroll">
+         <div class="reviews__scroll-block">
+            <div class="reviews__scroll-fotca">
+               <img src="../src/img/fotca2.png" alt="Man">
+            </div>
+            <div class="reviews__scroll-text">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                  commodo
+                  nibh ante
+                  facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+               <p>
+                  <b>Михаил</b>, Ген директор ПАО “Газпром”.
+               </p>
+            </div>
+         </div>
+         <div class="reviews__scroll-block">
+            <div class="reviews__scroll-fotca">
+               <img src="../src/img/fotca2.png" alt="Man">
+            </div>
+            <div class="reviews__scroll-text">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                  commodo
+                  nibh ante
+                  facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+               <p>
+                  <b>Михаил</b>, Ген директор ПАО “Газпром”.
+               </p>
+            </div>
+         </div>
+         <div class="reviews__scroll-block">
+            <div class="reviews__scroll-fotca">
+               <img src="../src/img/fotca2.png" alt="Man">
+            </div>
+            <div class="reviews__scroll-text">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                  commodo
+                  nibh ante
+                  facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+               <p>
+                  <b>Михаил</b>, Ген директор ПАО “Газпром”.
+               </p>
+            </div>
+         </div>
       </div>
    </div>
 
-   <div class="contacts__bg">
+   <div class="contacts__bg" id="contacts">
       <div class="contacts">
-         <div class="contacts__title">
+         <div class="contacts__title _anim-items _anim-no-hide">
             <h2>Мои контакты</h2>
             <img src="../src/img/cherta.png" alt="Черта"><br>
             <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </P>
          </div>
-         <div class="contacts__data">
+         <div class="contacts__data _anim-items _anim-no-hide">
             <div class="contacts__data-adres">
                <img src="../src/img/geo.png" alt="geo">
                <p>Санкт-Петербург <br>
@@ -271,10 +317,10 @@
                <p>+7 999 999-99-99</p>
             </div>
          </div>
-         <div class="contacts__hissms">
+         <div class="contacts__hissms _anim-items _anim-no-hide">
             <p>Оставьте мне сообщение</p>
          </div>
-         <form class="contacts__form" action="#">
+         <form class="contacts__form _anim-items _anim-no-hide" action="#">
             <input class="contacts__form-name" type="text" name="name" placeholder="Имя" cols="0" rows="0">
             <input class="contacts__form-email" type="text" name="email" placeholder="Email">
             <textarea class="contacts__form-sms" name="" id="" placeholder="Сообщение"></textarea>
@@ -299,7 +345,25 @@
       <p>Copyright © 2021 Андрей Браун. Design by Web</p>
    </footer>
 
-   <script src="../src/js/script.js"></script>
+   <!-- The Modal -->
+   <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+   </div>
+
+
+
+   <script src="../src/js/jquery-3.6.0.min.js""></script>
+   <script src=" https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script>
+   <script src=" ../src/js/slick.min.js"></script>
+   <script src=" ../src/js/script.js"></script>
 </body>
 
 </html>
