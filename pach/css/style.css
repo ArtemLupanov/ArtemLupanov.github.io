@@ -1,0 +1,179 @@
+._container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .contacts {
+    text-align: center;
+  }
+  .contacts__bg {
+    background-color: red;
+  }
+  .contacts__title {
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+  }
+  .contacts__title._active {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .contacts__title h2 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #582329;
+    padding: 120px 0 25px 0;
+    text-transform: uppercase;
+  }
+  .contacts__title img {
+    padding-bottom: 25px;
+  }
+  .contacts__title p {
+    font-weight: normal;
+    font-size: 16px;
+    padding-bottom: 43px;
+    text-align: center;
+    color: #28131b;
+  }
+  .contacts__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+  }
+  .contacts__data._active {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .contacts__data div {
+    width: 156px;
+  }
+  .contacts__data img {
+    padding-bottom: 7px;
+    max-height: 50px;
+  }
+  .contacts__data p {
+    padding-bottom: 31px;
+  }
+  .contacts__data-adres {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .contacts__data-adres:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .contacts__data-email {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .contacts__data-email:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .contacts__data-phone {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .contacts__data-phone:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .contacts__hissms p {
+    padding-bottom: 41px;
+    text-transform: uppercase;
+    font-family: FranklinGothic-Medium, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: -0.04em;
+    color: #fff;
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+  }
+  .contacts__hissms._active p {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .contacts__form {
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+  }
+  .contacts__form._active {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .contacts__form input {
+    display: block;
+    padding-bottom: 20px;
+    float: left;
+  }
+  .contacts__form-name {
+    width: 353px;
+    margin-right: 29px;
+    padding: 15px 0 0 12px;
+    height: 20px;
+  }
+  .contacts__form-email {
+    width: 353px;
+    padding: 15px 0 0 12px;
+    height: 20px;
+  }
+  .contacts__form-sms {
+    margin-top: 14px;
+    padding: 10px 0 0 12px;
+    width: 100%;
+    height: 95px;
+  }
+  .contacts__form-submit input {
+    display: inline-block;
+    text-align: center;
+  }
+  .contacts__form-submit1 {
+    height: 42px;
+    padding: 10px 17px 10px 17px;
+    border-radius: 5px;
+    margin-top: 28px;
+    margin-left: 320px;
+    color: black;
+    background: none;
+    border: 2px solid black;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .contacts__form-submit1:hover {
+    background-color: #fff;
+    color: black;
+  }
+  .contacts__form-submit1:active {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
