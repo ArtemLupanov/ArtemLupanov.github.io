@@ -1,0 +1,168 @@
+._container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+   .contacts {
+      text-align: center;
+      // .contacts__bg
+      &__bg {
+         background-color: red;
+      }
+      // .contacts__title
+      &__title {
+         transform: translate(0px, 100px);
+         opacity: 0;
+         transition: all 0.8s ease 0s;
+         &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+         }
+         & h2 {
+            font-weight: bold;
+            font-size: 50px;
+            color: #582329;
+            padding: 120px 0 25px 0;
+            text-transform: uppercase;
+         }
+         & img {
+            padding-bottom: 25px;
+         }
+         & p {
+            font-weight: normal;
+            font-size: 16px;
+            padding-bottom: 43px;
+            text-align: center;
+            color: #28131b;
+         }
+      }
+      // .contacts__data
+      &__data {
+         display: flex;
+         justify-content: space-between;
+         transform: translate(0px, 100px);
+         opacity: 0;
+         transition: all 0.8s ease 0s;
+         &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+         }
+         & div {
+            width: 156px;
+         }
+         & img {
+            padding-bottom: 7px;
+            max-height: 50px;
+         }
+         & p {
+            padding-bottom: 31px;
+         }
+      }
+      // .contacts__data-adres
+      &__data-adres {
+         transform: scale(1);
+         transition: all 0.2s;
+         &:hover {
+            transform: scale(1.1);
+         }
+      }
+      // .contacts__data-email
+      &__data-email {
+         transform: scale(1);
+         transition: all 0.2s;
+         &:hover {
+            transform: scale(1.1);
+         }
+      }
+      // .contacts__data-phone
+      &__data-phone {
+         transform: scale(1);
+         transition: all 0.2s;
+         &:hover {
+            transform: scale(1.1);
+         }
+      }
+      // .contacts__hissms
+      &__hissms {
+         & p {
+            padding-bottom: 41px;
+            text-transform: uppercase;
+            font-family: FranklinGothic-Medium, Arial, sans-serif;
+            font-weight: bold;
+            font-size: 21px;
+            letter-spacing: -0.04em;
+            color: #fff;
+            transform: translate(0px, 100px);
+            opacity: 0;
+            transition: all 0.8s ease 0s;
+         }
+         &._active p {
+            transform: translate(0px, 0px);
+            opacity: 1;
+         }
+      }
+      // .contacts__form
+      &__form {
+         transform: translate(0px, 100px);
+         opacity: 0;
+         transition: all 0.8s ease 0s;
+
+         &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+         }
+         & input {
+            display: block;
+            padding-bottom: 20px;
+            float: left;
+         }
+      }
+      // .contacts__form-name
+      &__form-name {
+         width: 353px;
+         margin-right: 29px;
+         padding: 15px 0 0 12px;
+         height: 20px;
+      }
+      // .contacts__form-email
+      &__form-email {
+         width: 353px;
+         padding: 15px 0 0 12px;
+         height: 20px;
+      }
+      // .contacts__form-sms
+      &__form-sms {
+         margin-top: 14px;
+         padding: 10px 0 0 12px;
+         width: 100%;
+         height: 95px;
+      }
+      // .contacts__form-submit
+      &__form-submit {
+         & input {
+            display: inline-block;
+            text-align: center;
+         }
+      }
+      // .contacts__form-submit1
+      &__form-submit1 {
+         height: 42px;
+         padding: 10px 17px 10px 17px;
+         border-radius: 5px;
+         margin-top: 28px;
+         margin-left: 320px;
+         color: black;
+         background: none;
+         border: 2px solid black;
+         transition: all 0.2s;
+         transform: scale(1);
+         &:hover {
+            background-color: #fff;
+            color: black;
+         }
+         &:active {
+            transform: scale(1.1);
+         }
+      }
+   }
+}
