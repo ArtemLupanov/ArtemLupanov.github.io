@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+   <title>ArtemLupanov</title>
+   <link rel="stylesheet" href="../src/css/reset.css">
+   <link rel="stylesheet" href="../src/css/style.css">
+</head>
+
+<body>
+
+   <header class="header">
+      <nav class="header__nav _container">
+         <div class="header__nav-logo">
+            <a href="#main" class="header__nav-logo-link">Артем Лупанов</a>
+         </div>
+         <div class="header__icon">
+            <span></span>
+         </div>
+         <div class="header__nav-menu">
+            <ul class="header__nav-menu-ul">
+               <li><a href="#aboutMe" class="header__nav-menu-ul-link active"> Обо мне </a></li>
+               <li><a href="#services" class="header__nav-menu-ul-link"> Услуги </a></li>
+               <li><a href="#price" class="header__nav-menu-ul-link"> Цены </a></li>
+               <li><a href="#statistics" class="header__nav-menu-ul-link"> Статистика </a></li>
+               <li><a href="#reviews" class="header__nav-menu-ul-link"> Отзывы </a></li>
+               <li><a href="#contacts" class="header__nav-menu-ul-link"> Контакты </a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+   <div class="mainbg">
+      <div class="main _container" id="main">
+         <div class="main__img">
+            <img src="../src/img/Me.jpg" alt="me">
+         </div>
+         <div class="main__title">
+            <div class="main__title-text">
+               <h1>Привет<br>Я Артем Лупанов</h1>
+               <h4>Full Stack WEB - разработчик</h4>
+            </div>
+            <div class="main__title-bottom">
+               <a href="#aboutMe" class="main__title-bottom-link"> Обо мне </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="aboutme _container" id="aboutMe">
+      <div class="aboutme__title _anim-items _anim-no-hide">
+         <h2>Обо мне</h2>
+         <img src="../src/img/line.png" alt="line">
+      </div>
+      <div class="aboutme__fotca _anim-items _anim-no-hide">
+         <img src="../src/img/aboutMe.jpg" alt="Man">
+      </div>
+      <div class="aboutme__text _anim-items _anim-no-hide">
+         <p>Привет, я Артем Лупанов - Веб разработчик. <br>Немного обо мне. Я студент Муромского института, родился в
+            непремечательном городе Кулебаки. К работе с детства приступаю с ответственностью. <br>Хоть я и начинающий
+            программист, работу выполню без лишних вопросов, быстро, а главное качественно. Подробнее обо мне вы можете
+            узнать в моем <b>Резюме</b>
+
+         </p>
+      </div>
+      <div class="aboutme__button">
+         <a class="aboutme__button-link _anim-items _anim-no-hide" href="#">Скачать резюме</a>
+      </div>
+   </div>
+
+   <div class="services-bg">
+      <div class="services _container">
+         <div class="services__title _anim-items _anim-no-hide" id="services">
+            <h2>Услуги</h2>
+            <img src="../src/img/line.png" alt="line">
+         </div>
+         <div class="services__skills _anim-items _anim-no-hide">
+            <div class="services__skills-design">
+               <img src="../src/img/design.svg" alt="Design">
+               <h3>Веб дизайн</h3>
+               <div>
+                  <p>Помогу решить небольшие недочеты в проекте, буду задавать как можно меньше вопросов и никогда не
+                     буду отходить от оригинала макета</p>
+               </div>
+            </div>
+            <div class="services__skills-development">
+               <div><img src="../src/img/development.svg" alt="Development"></div>
+               <h3>Разработка</h3>
+               <div>
+                  <p>Работу выполню чистым валидным кодом с использованием последних технологий.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="costcalculationbg" id="price">
+      <div class="costcalculation">
+         <form action="#">
+            <div class="price">
+               <h2>Расчет стоимости</h2>
+               <div>
+                  <h3>Тип сайта</h3>
+               </div>
+               <select name="tip" id="siteType">
+                  <option value="1" data-price="1000" data-day="1" id="onPage" class="priceO">Одностраничный</option>
+                  <option value="2" data-price="10000" data-day="7" id="score" class="priceO">Магазин</option>
+               </select>
+               <h3>Дизайн</h3>
+               <select onblur name="tip" id="design">
+                  <option value="1" data-price="2000" data-day="1" id="iDo" class="priceO">Делаю я</option>
+                  <option value="2" data-price="0" data-day="0" id="youDo" class="priceO">Делаете вы</option>
+               </select>
+               <h3>Адаптивность</h3>
+               <select name="tip" id="adaptability">
+                  <option value="1" data-price="5000" data-day="2" id="thereIs" class="priceO">Есть</option>
+                  <option value="2" data-price="1000" data-day="1" id="no" class="priceO">Нет</option>
+               </select>
+               <img src="../src/img/liniya_itoga.jpg" alt="">
+               <div class="costcalculation__itogi">
+                  <div class="costcalculation__itogi-sroci">
+                     <p>Сроки</p>
+                     <p>Стоимость</p>
+                  </div>
+                  <div class="costcalculation__itogi-price">
+                     <p id="p1">Завтра</p>
+                     <p id="p2">Бесплатно</p>
+                  </div>
+               </div>
+               <div class="costcalculation__button"><input type="button" value="Оставить заявку"></div>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <div class="statistics-bg">
+      <div class="statistics _container" id="statistics">
+         <div class="statistics__title _anim-items _anim-no-hide">
+            <h2>Статистика</h2>
+            <img src="../src/img/line.png" alt="Черта">
+         </div>
+         <div class="statistics__skills _anim-items _anim-no-hide">
+            <div class="statistics__skills-Smile">
+               <img src="../src/img/smile.svg" alt="smile">
+               <h3 class="count">1</h3>
+               <div>
+                  <p>Счастливых клиентов</p>
+               </div>
+            </div>
+            <div class="statistics__skills-Skobki">
+               <div><img src="../src/img/brackets.svg" alt="brackets"></div>
+               <h3 class="count">400</h3>
+               <div>
+                  <p>Часов работы</p>
+               </div>
+            </div>
+            <div class="statistics__skills-Galochka">
+               <div><img src="../src/img/checkMark.svg" alt="checkMark"></div>
+               <h3 class="count">2</h3>
+               <div>
+                  <p>Проектов завершено</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="reviews _container" id="reviews">
+      <div class="reviews__title">
+         <h2>Отзывы</h2>
+         <img src="../src/img/line.png" alt="Черта"><br>
+      </div>
+      <div class="reviews__scroll">
+         <p>Будте первым!</p>
+         <img src="../src/img/empty.svg" alt="">
+      </div>
+   </div>
+
+   <div class="contacts__bg" id="contacts">
+      <div class="contacts _container">
+         <div class="contacts__title _anim-items _anim-no-hide">
+            <h2>Контакты</h2>
+            <img src="../src/img/line.png" alt="Черта"><br>
+            <P> Звоните и пишите если появивились вопросы </P>
+         </div>
+         <div class="contacts__data _anim-items _anim-no-hide">
+            <div class="contacts__data-adres">
+               <img src="../src/img/geo.svg" alt="geo">
+               <p>Муром</p>
+            </div>
+            <div class="contacts__data-email">
+               <img src="../src/img/email.svg" alt="email">
+               <p>lupartem72@mail.ru</p>
+            </div>
+            <div class="contacts__data-phone">
+               <img src="../src/img/tube.svg" alt="tube">
+               <p>+7 987 755 79 12</p>
+            </div>
+         </div>
+         <form class="contacts__form _anim-items _anim-no-hide" name="form" action="mail.php" method="post"
+            id="form_message">
+            <h2>Оставьте мне письмо</h2>
+            <div class="contacts__form-flex">
+               <div class="contacts__form-flexName">
+                  <p>
+                  <div class="contacts__form-titles">Ваше имя*</div>
+                  <input class="contacts__form-name" name="name" type="text" />
+                  </p>
+               </div>
+               <div class="contacts__form-flexEmail">
+                  <p>
+                  <div class="contacts__form-titles">Электронная почта*</div>
+                  <input class="contacts__form-email" name="email" type="text" />
+                  </p>
+               </div>
+            </div>
+            <p>
+            <div class="contacts__form-titles">Тема сообщения</div>
+            <input class="contacts__form-subject" name="subjects" type="text" />
+            </p>
+
+            <p>
+            <div class="contacts__form-titles">Текст сообщения:</div>
+            <textarea class="contacts__form-message" name="message" cols="22" rows="5" /></textarea>
+            </p>
+
+            <p>
+               <input class="contacts__form-submit" id="submit" value="Отправить" type="submit" />
+            </p>
+         </form>
+      </div>
+   </div>
+
+   <div class="map">
+      <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a
+            href="https://yandex.ru/maps/geo/murom/53047386/?ll=42.024114%2C55.553613&utm_medium=mapframe&utm_source=maps&z=12.6"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Муром — Яндекс.Карты</a><iframe
+            src="https://yandex.ru/map-widget/v1/-/CCU4bWqwKB" width="100%" height="356px" frameborder="1"
+            allowfullscreen="true" style="position:relative;"></iframe>
+      </div>
+   </div>
+
+   <footer class="footer">
+      <p>Copyright © 2021 Артем Лупанов. Design by Web</p>
+   </footer>
+
+   <script src="../src/js/jquery-3.6.0.min.js""></script>
+   <script src=" https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script>
+   <script src=" ../src/js/slick.min.js"></script>
+   <script src="../src/js/script.js"></script>
+</body>
+
+</html>
